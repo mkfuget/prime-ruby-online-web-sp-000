@@ -6,4 +6,4 @@ def prime?(num)
   return range_array.none?{|divisor| num%divisor == 0}
 end
 
-puts prime?(38)
+puts prime?(25)
