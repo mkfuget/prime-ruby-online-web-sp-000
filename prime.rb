@@ -1,10 +1,10 @@
 require 'pry';
 
 def prime?(num)
-  range_array = (2..num).to_a 
+  range_array = (2..(num-1).to_a 
   primes = []
 
-  range_array.each do |num|
+  range_array.none?{|divisor| 
     if(primes.none?{|prime| num%prime == 0})
       primes.push(num)
     end
