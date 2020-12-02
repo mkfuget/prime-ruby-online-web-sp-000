@@ -4,7 +4,8 @@ def prime?(num)
   range_array = (2..(num-1).to_a 
   primes = []
 
-  range_array.none?{|divisor| 
+  return range_array.none?{|divisor| num%divisor == 0}
+    
     if(primes.none?{|prime| num%prime == 0})
       primes.push(num)
     end
